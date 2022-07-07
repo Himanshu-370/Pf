@@ -1,0 +1,36 @@
+.card__container {
+  width: 80%;
+}
+
+.skill__logo {
+  overflow: hidden;
+  margin: 0;
+}
+
+.skill__card {
+  background: var(--color-bg-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.skill__name {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .card__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card__container {
+    width: 100%;
+  }
+
+  .skill__card {
+    padding: 1.2rem;
+  }
+}

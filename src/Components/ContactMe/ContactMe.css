@@ -1,0 +1,70 @@
+.contactme__container {
+  margin-top: 20%;
+  display: grid;
+  grid-template-columns: 48% 49%;
+  gap: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 95%; /* Full width */
+  padding: 12px 0;
+  border-bottom: 1px solid #5d6c83; /* Gray border */
+  margin: 1.3rem 0; /* Add a top margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background: transparent;
+}
+
+/* Style the submit button with a specific background color etc */
+.contactbtn {
+  background: transparent;
+  color: white;
+  padding: 12px 0;
+  border-bottom: 1px solid #5d6c83; /* Gray border */
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+}
+
+@media screen and (max-width: 768px) {
+  .contactme__container h1 {
+    font-size: 2.5rem;
+  }
+
+  .contactme__container {
+    grid-template-columns: 50% 48%;
+    gap: 2%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    padding: 10px 0;
+    margin: 1rem 0; /* Add a top margin */
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .contactme__container h1 {
+    font-size: 1.7rem;
+  }
+
+  .contactme__container a {
+    font-size: 1.3rem;
+  }
+
+  .contact__title {
+    margin-bottom: 3rem;
+  }
+
+  .contactme__container {
+    display: inline;
+    margin-top: 30%;
+  }
+}
